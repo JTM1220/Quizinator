@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <!--Start Quiz-->
+    <div class="start_btn">
+        <button>Start Quiz</button>
+    </div>
+    <!--info box-->
+    <div class="info_box">
+        <div class="info_title">
+            <span>The rules of this Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will only have <span>30 Seconds</span> per Question</div>
+            <div class="info">2. Once you select an answer, you may not select a different.</div>
+            <div class="info">3. IF you run out of time the question will be marked wrong.</div>
+            <div class="info">4. If you exit, it <span>WILL NOT SAVE</span> your previously marked answers.</div>
+            <div class="info">Lastly, Good Luck</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!---Quiz Box-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Super HARD Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time left</div>
+                <div class="timer_sec">30</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span></span>
+            </div>
+            <div class="option_list">
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+        </div>
+        </section>
+        <!-- Quiz Box Footer -->
+        <footer>
+            <div class="total_que">
+                <!-- <span><p>2</p><p>of</p><p>5</p><p>questions</span> -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+    <!-- Result box -->
+    <div class="result_box">
+        <div class="complete_text">You've Completed the quiz!</div>
+        <div class="score_text">
+            <span>and sorry, You only scored <p>3</p> out of <p>5</p></span>
+        </div>
+        <div>
+            <input type="text" id="hiscore" name="name" required
+       minlength="4" maxlength="8" size="10" >
+       <button class="submit" type="submit">submit</button>
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/ques.js"></script>
+
+</body>
+</html>
